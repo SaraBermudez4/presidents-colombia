@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="src/styles/style.css">
+        <title>Presidentes de Colombia</title>
+    </head>
+
+    <body>
+        <header class="text-center p-3">
+            <h1>Presidentes de Colombia</h1>
+        </header>
+        <main>
+            <section class="mb-4">
+                <p>
+                    Bienvenido a la enciclopedia digital de los presidentes de Colombia. En esta página encontrará
+                    información sobre los líderes que han marcado la historia del país desde su independencia. Explora
+                    la
+                    lista y elige un presidente para aprender más sobre su vida, sus logros y el tiempo que dirigieron
+                    el
+                    país. Esta es una oportunidad única en la vida para aprender más sobre las contribuciones y el
+                    legado de
+                    cada presidente colombiano.
+                </p>
+            </section>
+            <section>
+                <select id="select-name-president" class="form-select mb-3">
+                    <option value="" selected>Selecciona un presidente</option>
+                </select>
+                <div id="president-info" class="justify-content-center mt-2">
+                    <div class="card d-flex" id="president-card">
+                        <img id="president-image" src="" alt="Imagen del presidente" class="card-img-top">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="president-name"></h5>
+                                <p class="card-text" id="president-description"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <span>
+                                        <i class="bi bi-calendar-week"></i>
+                                        <span style="font-weight: bold;">Inicio del período: </span>
+
+                                        <span id="president-startPeriodDate"></span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>
+                                        <i class="bi bi-calendar-week"></i>
+                                        <span style="font-weight: bold;">Fin del período:</span>
+
+                                        <span id="president-endPeriodDate"></span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>
+                                        <i class="bi bi-diagram-3-fill"></i>
+                                        <span style="font-weight: bold;">Partido político:</span>
+                                        <span id="president-politicalParty"></span>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>
+                                        <i class="bi bi-buildings"></i>
+                                        <span style="font-weight: bold;">Ciudad:</span>
+                                        <span id="president-city"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span>Hecho con ❤️ de Sara.</span>
+                <span>Copyright 2024 - Todos los derechos reservados.</span>
+                <div class="social-icons mt-2">
+                    <div>
+                        <a href="https://github.com/SaraBermudez4" target="_blank"
+                            style="color: white; font-size: 30px;">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/sara-bermudez-543906125/" target="_blank"
+                            style="color: white; font-size: 30px;">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="dist/utils/formatDate.js" type="module"></script>
+        <script src="dist/index.js" type="module"></script>
+    </body>
+
+</html>
